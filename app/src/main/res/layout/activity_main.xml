@@ -8,14 +8,24 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.anakin.appespiao2.MainActivity">
+    tools:context="com.example.anakin.appespiao2.PrincipalActivity">
 
     <TextView
-        android:text="TextView"
+        android:text="Latitude: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:id="@+id/txtLatitude"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="48dp"
-        android:id="@+id/textView" />
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="37dp" />
+
+    <TextView
+        android:text="Longitude: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:id="@+id/TxtLongitude"
+        android:layout_below="@+id/txtLatitude"
+        android:layout_alignStart="@+id/txtLatitude" />
 </RelativeLayout>
