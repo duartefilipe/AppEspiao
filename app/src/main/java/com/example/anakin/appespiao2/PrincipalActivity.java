@@ -34,7 +34,7 @@ public class PrincipalActivity extends AppCompatActivity {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED){
             System.out.println("-----------------------------aqui no if");
         }else{
-            System.out.println("-----------------------------aqui no else");
+            System.out.println("-----------------------------aqui no else ");
         }
 
         System.out.println("-----------------------------depois do else");
