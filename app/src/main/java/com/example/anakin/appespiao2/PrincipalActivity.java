@@ -29,16 +29,12 @@ public class PrincipalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         txtLatitude = (TextView) findViewById(R.id.txtLatitude);
         txtLongitude = (TextView) findViewById(R.id.txtLongitude);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED){
             System.out.println("-----------------------------aqui no if");
         }else{
             System.out.println("-----------------------------aqui no else");
-            locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-            location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
         }
 
         System.out.println("-----------------------------depois do else");
@@ -52,9 +48,8 @@ public class PrincipalActivity extends AppCompatActivity {
         txtLongitude.setText("Longitude: " + longitude);
         txtLatitude.setText("Latitude: " + latitude);
 
-        System.out.println("-----------------------------Latitude" +latitude);
-        System.out.println("-----------------------------Longitude" +longitude);
-
+        System.out.println("-----------------------------Latitude" + latitude + "---------------------------------");
+        System.out.println("-----------------------------Longitude" + longitude + "---------------------------------");
         
     }
 }
